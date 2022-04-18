@@ -1,0 +1,28 @@
+@font-face {
+  font-family: SFPRODISPLAY;
+  src: url("../fonts/SFPRODISPLAYBOLD.woff2") format("woff2"), 
+  url("../fonts/SFPRODISPLAYBOLD.woff") format("woff");
+  // url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SFPRODISPLAY;
+  src: url("../fonts/SFPRODISPLAYREGULAR.woff2") format("woff2"), 
+  url("../fonts/SFPRODISPLAYREGULAR.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: spaceagecyrillic;
+  src: url("../fonts/spaceagecyrillic_regular.woff2") format("woff2"), 
+  url("../fonts/spaceagecyrillic_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
