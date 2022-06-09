@@ -31,13 +31,15 @@ const {
 } = require('assert');
 
 const js_plugins = [
-  'node_modules/jquery/dist/jquery.js',
-  'node_modules/slick-carousel/slick/slick.js'
+  // 'node_modules/jquery/dist/jquery.js',
+  'node_modules/swiper/swiper-bundle.min.js',
+  // 'node_modules/slick-carousel/slick/slick.js',
 ];
 
 const css_plugins = [
   'node_modules/normalize.css/normalize.css',
-  'node_modules/slick-carousel/slick/slick.css'
+  'node_modules/swiper/swiper-bundle.min.css',
+  // 'node_modules/slick-carousel/slick/slick.css',
 ];
 
 let settings_size = {
@@ -173,6 +175,7 @@ gulp.task('html', () => {
       selectors: '.include-svg',
       root: './src/svg/include'
     }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(size(settings_size))
     .pipe(gulp.dest('build'))
     .pipe(bs.stream())
