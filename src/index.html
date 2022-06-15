@@ -40,7 +40,7 @@
     </section>
 
     <div class="background" style="background-image: url('images/about-bg.jpg')">
-      <section class="about padding">
+      <section class="about padding" id="about">
         <div class="container">
           <h2 class="title">О нас</h2>
           <ul class="about__list">
@@ -278,7 +278,8 @@
               <a class="how-happens__link link" href="">Делаем фото в инстаграм</a>
             </li>
             <li class="how-happens__sixth">
-              <a class="how-happens__link link" href="">Едим из тюбиков: 5 видов меню на выбор (веган, спорт, безлактозное,
+              <a class="how-happens__link link" href="">Едим из тюбиков: 5 видов меню на выбор (веган, спорт,
+                безлактозное,
                 безглютеновое, обычное)</a>
             </li>
             <li class="how-happens__seventh">
@@ -309,7 +310,7 @@
     </section>
 
     <div class="background" style="background-image: url('images/bg2.jpg');">
-      <section class="special">
+      <section class="special"  id="special">
         <div class="container">
           <h2 class="title">Спец предложения</h2>
           <ul class="special__inner">
@@ -404,16 +405,24 @@
       <div class="quote">
         <div class="container">
           <div class="quote__inner">
-            <ul class="quote__slider">
-              <li class="quote__item">
-                <img width="800" src="images/quote1.jpg" alt="команда космонавтов" class="quote__img">
-              </li>
-              <li class="quote__item">
-                <img width="800" src="images/quote1.jpg" alt="команда космонавтов" class="quote__img">
-              </li>
-            </ul>
-          </div>
+            <div class="quote__slider swiper">
+              <ul class=" swiper-wrapper">
+                <li class="quote__item swiper-slide">
+                  <img width="800" src="images/quote1.jpg" alt="команда космонавтов" class="quote__img">
+                </li>
+                <li class="quote__item swiper-slide">
+                  <img width="800" src="images/quote1.jpg" alt="команда космонавтов" class="quote__img">
+                </li>
+              </ul>
+              <button class="quote__btn quote__btn--prev swiper-button-prev" type="button">
+                <span class="hide">предыдущий слайд</span>
+              </button>
+              <button class="quote__btn quote__btn--next swiper-button-next" type="button">
+                <span class="hide"> следующий слайд</span>
+              </button>
+            </div>
 
+          </div>
           <blockquote class="quote__text">
             Ты знаешь о Космическом законе – представь себе то, что ты хочешь, и оно войдет в твою жизнь.
           </blockquote>
@@ -422,7 +431,7 @@
       </div>
     </div>
 
-    <section class="contacts padding">
+    <section class="contacts padding" id="contacts" >
       <div class="container">
 
         <div class="contacts__inner">
@@ -465,13 +474,14 @@
       </div>
     </section>
 
-    <div class="video">
-      <iframe loading="lazy"  
-      src="https://www.ustream.tv/embed/17074538?html5ui=1&autoplay=true&volume=50&forced-quality=high"
-      frameborder="0" 
-      ></iframe>
+    <div class="container">
+      <div class="title" id="video">Онлайн вид с МКС</div>
+      <div class="video">
+        <iframe loading="lazy"
+          src="https://www.ustream.tv/embed/17074538?html5ui=1&autoplay=true&volume=50&forced-quality=high"
+          ></iframe>
+      </div>
     </div>
-
   </main>
 
   @@include('components/page/_3_footer.html')
