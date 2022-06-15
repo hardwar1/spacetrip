@@ -188,7 +188,7 @@ body {
   z-index: 50;
   transform: translateY(0);
   transition: transform 0.4s, background-color 0.2s, padding 0.3s;
-  
+
   &.header--scroll {
     padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.4);
@@ -337,8 +337,8 @@ body {
     margin-left: auto;
     display: flex;
     margin-bottom: auto;
-    @include max-w($sm){
-     display: block;
+    @include max-w($sm) {
+      display: block;
     }
 
     p {
@@ -349,7 +349,7 @@ body {
         margin-right: 50px;
       }
 
-      @include max-w($sm){
+      @include max-w($sm) {
         max-width: 100%;
         &:not(:last-child) {
           margin-right: 0;
@@ -593,12 +593,12 @@ body {
     top: 424px;
     left: 570px;
     width: 270px;
-    
+
     @include max-w($lg) {
       top: 213px;
       left: 296px;
     }
-    
+
     @include max-w($sm) {
       @include line-clamp;
       left: 140px;
@@ -842,7 +842,7 @@ body {
     @include max-w($md) {
       top: 100%;
     }
-    
+
     &::after {
       content: url(../images/sprite.svg#slider-arrow);
       position: absolute;
@@ -973,6 +973,77 @@ body {
   }
 }
 
+// ========= contact-me ============
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 55;
+  border-radius: 25px;
+  padding-left: 10px;
+  @include line-clamp();
+  transform: translateX(-100vw);
+  animation: contact-me 15s 0s 1 forwards;
+  transition: width 0.3s;
+
+  &:hover {
+
+  }
+
+  &__text {
+    font-size: 16px;
+    color: white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-50%);
+    background-image: url(../images/sprite.svg#telegram);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@keyframes contact-me {
+  0% {
+    transform: translateX(-100vw) scale(0);
+    
+  }
+
+
+  12% {
+    transform: translateX(0) scale(1);
+    width: 50px;
+  }
+
+  45% {
+    transform: translateX(0);
+    width: 270px;
+  }
+
+  85% {
+    transform: translateX(0);
+    width: 270px;
+  }
+
+  100% {
+    transform: translateX(0);
+    width: 50px;
+  }
+}
+
+// ========= /contact-me ============
 // ========= footer ============
 
 .footer {
