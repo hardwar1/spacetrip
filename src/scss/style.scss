@@ -575,10 +575,6 @@ body {
       top: 152px;
       left: 172px;
     }
-    @include max-w($sm) {
-      top: 152px;
-      left: 172px;
-    }
   }
 
   &__fifth {
@@ -591,26 +587,20 @@ body {
       top: 214px;
       left: 16px;
     }
-    @include max-w($sm) {
-      top: 214px;
-      left: 16px;
-    }
   }
 
   &__sixth {
     top: 424px;
     left: 570px;
     width: 270px;
+    
     @include max-w($lg) {
       top: 213px;
       left: 296px;
     }
+    
     @include max-w($sm) {
-      top: 213px;
-      left: 296px;
-      width: 100px;
       @include line-clamp;
-      top: 213px;
       left: 140px;
       width: 153px;
     }
