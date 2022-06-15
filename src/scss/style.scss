@@ -992,10 +992,6 @@ body {
   animation: contact-me 15s 0s 1 forwards;
   transition: width 0.3s;
 
-  &:hover {
-
-  }
-
   &__text {
     font-size: 16px;
     color: white;
@@ -1021,8 +1017,7 @@ body {
     
   }
 
-
-  12% {
+  9% {
     transform: translateX(0) scale(1);
     width: 50px;
   }
