@@ -693,6 +693,7 @@ body {
 
   &__item {
     flex-basis: 500px;
+    margin-bottom: 40px;
   }
 
   &__box {
@@ -990,7 +991,6 @@ body {
   @include line-clamp();
   transform: translateX(-100vw);
   animation: contact-me 15s 0s 1 forwards;
-  transition: width 0.3s;
 
   &__text {
     font-size: 16px;
@@ -1014,14 +1014,16 @@ body {
 @keyframes contact-me {
   0% {
     transform: translateX(-100vw) scale(0);
-    
   }
 
   9% {
     transform: translateX(0) scale(1);
-    width: 50px;
   }
 
+  40% {
+    transform: translateX(0);
+    width: 50px;
+  }
   45% {
     transform: translateX(0);
     width: 270px;

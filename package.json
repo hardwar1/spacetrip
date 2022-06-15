@@ -6,6 +6,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
 		"@babel/preset-env": "^7.12.11",
+		"animate.css": "^4.1.1",
 		"browser-sync": "^2.26.13",
 		"fs": "^0.0.1-security",
 		"gulp": "^4.0.2",
@@ -35,7 +36,8 @@
 		"jquery": "^3.6.0",
 		"slick-carousel": "^1.8.1",
 		"swiper": "^8.2.2",
-		"vinyl-ftp": "^0.6.1"
+		"vinyl-ftp": "^0.6.1",
+		"wow.js": "^1.2.2"
 	},
 	"dependencies": {
 		"normalize.css": "^8.0.1"

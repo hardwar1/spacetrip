@@ -33,13 +33,13 @@ const {
 const js_plugins = [
   // 'node_modules/jquery/dist/jquery.js',
   'node_modules/swiper/swiper-bundle.min.js',
-  // 'node_modules/slick-carousel/slick/slick.js',
+  'node_modules/wow.js/dist/wow.js',
 ];
 
 const css_plugins = [
   'node_modules/normalize.css/normalize.css',
   'node_modules/swiper/swiper-bundle.min.css',
-  // 'node_modules/slick-carousel/slick/slick.css',
+  'node_modules/animate.css/animate.css',
 ];
 
 let settings_size = {
