@@ -1,6 +1,6 @@
 'use strict'
 
-document.addEventListener("DOMContentLoaded", function (event) {
+window.onload = () => {
 
   // мой мини jquery 
   function qOne(selector) {
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       resetAnimation: true,     // reset animation on end (default is true)
     }
   );
-  wow.init();
+  // wow.init();
 
 
-});
+};
